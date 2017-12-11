@@ -54,6 +54,7 @@ class Kernel extends HttpKernel
         'shopify.auth' => \App\Http\Middleware\Shopify\Authentication::class,
         'shopify.validate' => \App\Http\Middleware\Shopify\ValidateRequest::class,
         'shopify.charge' => \App\Http\Middleware\Shopify\RequireCharge::class,
+        'shopify.session' => \App\Http\Middleware\Shopify\EnsureSession::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }

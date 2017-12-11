@@ -18,8 +18,15 @@ class Authentication
 
         $shop = Shop::where('myshopify_domain', 'LIKE', $request->shop)->first();
         if ($shop) {
+            $this->setSession($domain);
             return $next($request);
         }
         return $response(redirect(config('shopify.redirect_uri')));
+    }
+
+    public function setSession($domain)
+    {
+        session('domain', $domain);
+        session('created', time());
     }
 }

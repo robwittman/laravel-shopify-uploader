@@ -56,7 +56,7 @@ class Shopify extends Controller
 
     protected function getRedirectUri()
     {
-        $scopes = config('shopify.scopes');
+        $scopes = implode(',', config('shopify.scopes'));
         $redirectUri = url(config('shopify.redirect_uri'));
         $helper = $this->api->getOAuthHelper();
         return $helper->getAuthorizationUrl($redirectUri, $scopes);

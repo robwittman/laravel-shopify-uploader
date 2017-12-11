@@ -37,5 +37,20 @@ return [
    |
    */
 
-   'scopes' => 'read_products'
+   'scopes' => [
+     'read_products'
+   ]
+
+   /*
+   |--------------------------------------------------------------------------
+   |    Webhooks
+   |--------------------------------------------------------------------------
+   |
+   | List of webhook topics this app ought to be listening t
+   |
+   */
+
+  'webhooks' => [
+
+  ]
 ];
