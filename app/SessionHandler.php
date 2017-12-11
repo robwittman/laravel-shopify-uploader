@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * App\SessionHandler
+ *
+ * Bridge for using native Laravel Sessions with our Shopify library
+ */
+
 namespace App;
 
 use Shopify\Storage\PersistentStorageInterface;

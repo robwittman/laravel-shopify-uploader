@@ -15,8 +15,11 @@ Route::get('/', function () {
 
 });
 
-Route::group(['prefix' => 'app', 'middleware' => 'shopify.auth'], function() {
-    Route::get('', 'Shopify@render');
+Route::group(['prefix' => 'app'], function() {
+    Route::get('', 'Shopify@render')->middleware('shopify.auth');
+    Route::group(['namespace' => 'App'], function() {
+        Route::get('/products', 'ProductsController@index');
+    });
 });
 
 Route::group(['prefix' => 'shopify'], function() {
@@ -24,15 +27,9 @@ Route::group(['prefix' => 'shopify'], function() {
     Route::match(['get', 'post'], '/auth', 'Shopify@auth');
 });
 
-Route::group([
-    'prefix' => 'admin',
-    'namespace' => 'Admin'
-], function() {
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
     Auth::routes();
-
-    Route::group([
-        'middleware' => 'auth'
-    ], function() {
+    Route::group(['middleware' => 'auth'], function() {
         Route::get('/shops', 'ShopsController@index');
         Route::resource('/users', 'UsersController');
     });

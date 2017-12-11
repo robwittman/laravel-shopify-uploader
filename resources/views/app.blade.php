@@ -33,6 +33,7 @@
 </div>
 <div class="Polaris-Page__Content">
   <p>Page content</p>
+  <a href="/app/products">View Products</a>
 </div>
 </div>
 @endsection
