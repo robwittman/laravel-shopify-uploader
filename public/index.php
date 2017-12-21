@@ -1,6 +1,5 @@
 <?php
 
-error_log(json_encode($_GET));
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

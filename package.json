@@ -1,18 +1,24 @@
 {
-  "private": true,
-  "scripts": {
-    "prod": "gulp --production",
-    "dev": "gulp watch"
-  },
-  "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "gulp": "^3.9.1",
-    "jquery": "^3.1.0",
-    "laravel-elixir": "^6.0.0-9",
-    "laravel-elixir-vue-2": "^0.2.0",
-    "laravel-elixir-webpack-official": "^1.0.2",
-    "lodash": "^4.16.2",
-    "vue": "^2.0.1",
-    "vue-resource": "^1.0.3"
-  }
+    "private": true,
+    "scripts": {
+        "prod": "gulp --production",
+        "dev": "gulp watch"
+    },
+    "devDependencies": {
+        "babel-preset-react": "^6.23.0",
+        "bootstrap-sass": "^3.3.7",
+        "gulp": "^3.9.1",
+        "jquery": "^3.1.0",
+        "laravel-elixir": "^6.0.0-9",
+        "laravel-elixir-vue-2": "^0.2.0",
+        "laravel-elixir-webpack-official": "^1.0.2",
+        "lodash": "^4.16.2",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2",
+        "vue-resource": "^1.0.3"
+    },
+    "dependencies": {
+        "@shopify/polaris": "^1.8.3",
+        "axios": "^0.17.1"
+    }
 }

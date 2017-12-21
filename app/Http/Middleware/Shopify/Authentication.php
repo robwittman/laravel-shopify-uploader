@@ -21,7 +21,7 @@ class Authentication
             $this->setSession($domain);
             return $next($request);
         }
-        return $response(redirect(config('shopify.redirect_uri')));
+        return response(redirect(config('shopify.redirect_uri')));
     }
 
     public function setSession($domain)
