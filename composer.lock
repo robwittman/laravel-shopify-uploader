@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "25708cf1e5b778d0174aec552d74e222",
+    "content-hash": "5beeec407f452575a0ac9a0e950f19d1",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -412,16 +412,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.28",
+            "version": "v5.5.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "cfafae1f2043208390a7c984e3070696f4969605"
+                "reference": "b4fb6eeb227b7327b4ca7f92263b693ec9ac9875"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cfafae1f2043208390a7c984e3070696f4969605",
-                "reference": "cfafae1f2043208390a7c984e3070696f4969605",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b4fb6eeb227b7327b4ca7f92263b693ec9ac9875",
+                "reference": "b4fb6eeb227b7327b4ca7f92263b693ec9ac9875",
                 "shasum": ""
             },
             "require": {
@@ -542,7 +542,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-12-26T16:24:40+00:00"
+            "time": "2017-12-20T15:43:48+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1127,58 +1127,17 @@
             "time": "2017-09-22T20:46:04+00:00"
         },
         {
-            "name": "robwittman/php-klaviyo",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/robwittman/php-klaviyo.git",
-                "reference": "161840a4288d731046d6646ef860eee317279f4c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/robwittman/php-klaviyo/zipball/161840a4288d731046d6646ef860eee317279f4c",
-                "reference": "161840a4288d731046d6646ef860eee317279f4c",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^6.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Klaviyo\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Klaviyo\\Test\\": "test"
-                }
-            },
-            "authors": [
-                {
-                    "name": "Rob Wittman",
-                    "email": "rob@ihsdigital.com"
-                }
-            ],
-            "description": "PHP SDK For Klaviyo's API",
-            "support": {
-                "source": "https://github.com/robwittman/php-klaviyo/tree/master",
-                "issues": "https://github.com/robwittman/php-klaviyo/issues"
-            },
-            "time": "2018-01-03T03:41:21+00:00"
-        },
-        {
             "name": "robwittman/shopify-php-sdk",
-            "version": "dev-master",
+            "version": "dev-fix-old-files",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robwittman/shopify-php-sdk.git",
-                "reference": "02f64e81df86918f2b7c480909ff581acc1ab8c2"
+                "reference": "a160f03f1d3d3b110e569301479235ff8369b0da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robwittman/shopify-php-sdk/zipball/02f64e81df86918f2b7c480909ff581acc1ab8c2",
-                "reference": "02f64e81df86918f2b7c480909ff581acc1ab8c2",
+                "url": "https://api.github.com/repos/robwittman/shopify-php-sdk/zipball/a160f03f1d3d3b110e569301479235ff8369b0da",
+                "reference": "a160f03f1d3d3b110e569301479235ff8369b0da",
                 "shasum": ""
             },
             "require": {
@@ -1215,7 +1174,7 @@
                 "php",
                 "shopify"
             ],
-            "time": "2017-12-12T03:37:28+00:00"
+            "time": "2017-12-12T03:10:42+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3261,16 +3220,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "2.1.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f"
+                "reference": "1174d9018191e93cb9d719edec01257fc05f8158"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
-                "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/1174d9018191e93cb9d719edec01257fc05f8158",
+                "reference": "1174d9018191e93cb9d719edec01257fc05f8158",
                 "shasum": ""
             },
             "require": {
@@ -3321,7 +3280,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2017-12-22T14:50:35+00:00"
+            "time": "2017-11-03T07:16:52+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -3923,8 +3882,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "robwittman/shopify-php-sdk": 20,
-        "robwittman/php-klaviyo": 20
+        "robwittman/shopify-php-sdk": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

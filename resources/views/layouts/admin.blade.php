@@ -25,12 +25,6 @@
             margin-top: 0;
             margin-bottom: 0;
         }
-        .navbar {
-            margin-bottom: 0;
-        }
-        #content {
-            margin-top: 22px;
-        }
     </style>
 
 </head>
@@ -58,9 +52,8 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         @if (Auth::check())
-                            <li><a href="/admin/shops">Shops</a></li>
-                            <li><a href="/admin/users">Users</a></li>
-                            <li><a href="/admin/emails">Emails</a></li>
+                            <li><a href="/shops">Shops</a></li>
+                            <li><a href="/users">Users</a></li>
                         @else
                             &nbsp;
                         @endif
@@ -78,14 +71,13 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="{{ URL::to('/admin/settings') }}">Settings</a></li>
-                                    <li role="separator" class="divider"></li>
                                     <li>
                                         <a href="{{ url('/admin/logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
+
                                         <form id="logout-form" action="{{ url('/admin/logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
@@ -97,17 +89,8 @@
                 </div>
             </div>
         </nav>
-        @if (Session::has('message'))
-            <div class="alert alert-success text-center">
-                {{ Session::get('message') }}
-            </div>
-        @elseif (Session::has('error'))
-            <div class="alert alert-danger text-center">
-                {{ Session::get('error') }}
-            </div>
-        @endif
-        <div class="container" id='content'>
-            @yield('content')
+        <div class="container">
+            @yield('content')            
         </div>
     </div>
     <!-- Scripts -->
