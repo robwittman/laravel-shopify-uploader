@@ -4,11 +4,10 @@
 
 <div class="col-sm-8 col-sm-offset-2 col-xs-12">
     <div class="panel panel-default">
-        <form class="form-horizontal" action="{{ URL::to('/admin/users/'.$user->id)}}" method="post">
+        <form class="form-horizontal" action="{{ URL::to('/admin/settings')}}" method="post">
             {{ csrf_field() }}
-            {{ method_field('PUT') }}
             <div class="panel-heading">
-                Update User
+                Settings
             </div>
             <div class="panel-body">
                 <div class="form-group">

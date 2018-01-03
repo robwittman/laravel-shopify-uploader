@@ -1,32 +1,32 @@
-@extends('layouts/admin')
+@extends('layouts.admin')
 
 @section('content')
 
 <div class="col-sm-8 col-sm-offset-2 col-xs-12">
     <div class="panel panel-default">
-        <form class="form-horizontal" action="{{ URL::to('/admin/users/'.$user->id)}}" method="post">
+        <form class="form-horizontal" action="/admin/users" method="post">
             {{ csrf_field() }}
-            {{ method_field('PUT') }}
             <div class="panel-heading">
-                Update User
+                Create User
             </div>
             <div class="panel-body">
                 <div class="form-group">
                     <label class='col-sm-3 control-label'>Name</label>
                     <div class="col-sm-9">
-                        <input type="text" name="name" value="{{ $user->name }}" class='form-control'>
+                        <input type="text" name="name" value="" class='form-control'>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class='col-sm-3 control-label'>Email</label>
                     <div class="col-sm-9">
-                        <input type="text" name="email" value="{{ $user->email }}" class='form-control'>
+                        <input type="text" name="email" value="" class='form-control'>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class='col-sm-3 control-label'>Password</label>
                     <div class="col-sm-9">
                         <input type="password" name="password" value="" class='form-control'>
+                        <span class="help-block">Leave blank to autogenerate passwords</span>
                     </div>
                 </div>
                 <div class="form-group">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="panel-footer">
-                <button type="submit" name="button" class='btn btn-primary pull-right'>Update</button>
+                <button type="submit" name="button" class='btn btn-primary pull-right'>Create</button>
                 <div class="clearfix"></div>
             </div>
         </form>

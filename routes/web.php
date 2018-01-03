@@ -32,5 +32,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
     Route::group(['middleware' => 'auth'], function() {
         Route::get('/shops', 'ShopsController@index');
         Route::resource('/users', 'UsersController');
+        Route::resource('/emails', 'EmailsController');
+        Route::group(['prefix' => 'settings'], function() {
+            Route::get('', 'SettingsController@index');
+            Route::post('', 'SettingsController@update');
+        });
     });
 });
