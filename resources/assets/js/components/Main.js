@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 
-/* An example React component */
-class Main extends Component {
-    render() {
-        return (
-            <div>
-                <h3>All Products</h3>
-            </div>
-        );
-    }
-}
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom'
 
-export default Main;
+import PrimaryLayout from '../layouts/PrimaryLayout'
 
-/* The if statement is required so as to Render the component on pages that have a div with an ID of "root";
-*/
+const App = () => (
+  <Router basename='/app'>
+    <div>
+      <PrimaryLayout />
+    </div>
+  </Router>
+)
 
-if (document.getElementById('root')) {
-    ReactDOM.render(<Main />, document.getElementById('root'));
-}
+ReactDOM.render(<App />, document.getElementById('root'))

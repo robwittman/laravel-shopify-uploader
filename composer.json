@@ -7,7 +7,8 @@
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.5.*",
-        "robwittman/shopify-php-sdk": "dev-fix-old-files"
+        "robwittman/shopify-php-sdk": "dev-fix-old-files",
+        "league/flysystem": "^1.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

@@ -69,7 +69,12 @@ class Shopify extends Controller
         $this->api->setAccessToken($token->access_token);
         $service = new ShopService($this->api);
         $shopData = $service->get();
-        $shop = Shop::firstOrCreate(array('id' => $shopData->id));
+        try {
+            $shop = Shop::findOrFail($shopData->id);
+        } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            $shop = new Shop();
+        }
+        
         foreach ($shopData->exportData() as $key => $value) {
             $shop->{$key} = $value;
         }
